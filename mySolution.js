@@ -130,3 +130,17 @@
 //   }
 //   return result;
 // }
+
+// Square Every Digit
+// function squareDigits(num) {
+//   let arr = num
+//     .toString()
+//     .split("")
+//     .map((elem) => elem * elem)
+//     .join("");
+
+//   //   let mutatedArr = arr.map(elem=>elem*elem).join("");
+
+//   //   return Number(mutatedArr);
+//   return Number(arr);
+// }
