@@ -63,13 +63,13 @@
 //   return new Set(str.toLowerCase()).size === str.length;
 // }
 
-// // Beginner Series #3 Sum of Numbers
-// function GetSum(a, b) {
-//   var result = 0;
-//   var bigger = a > b ? a : b;
-//   var smaller = a > b ? b : a;
-//   for (var i = smaller; i <= bigger; i++) {
-//     result += i;
-//   }
-//   return result;
-// }
+// Beginner Series #3 Sum of Numbers
+function GetSum(a, b) {
+  let result = 0;
+  let bigger = a > b ? a : b;
+  let smaller = a > b ? b : a;
+  for (let i = smaller; i <= bigger; i++) {
+    result += i;
+  }
+  return result;
+}
