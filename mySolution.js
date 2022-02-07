@@ -36,3 +36,40 @@
 //   }
 //   return parseInt(result);
 // }
+
+// // Array.diff
+// function arrayDiff(a, b) {
+//   return a.filter((value) => !b.includes(value));
+// }
+
+// // List Filtering
+// function filter_list(l) {
+//   return l.filter((value) => value === Number(value));
+// }
+
+// // Grasshopper - Summation
+// var summation = function (num) {
+//   let sum = 0;
+//   for (let i = 0; i <= num; i++) {
+//     sum += i;
+//   }
+//   return sum;
+// };
+
+// // Isogram ?? algorithm
+// let isIsogram = (str) => str.split("").every((c, i) => str.indexOf(c) == i);
+// // Or
+// function isIsogram(str) {
+//   return new Set(str.toLowerCase()).size === str.length;
+// }
+
+// // Beginner Series #3 Sum of Numbers
+// function GetSum(a, b) {
+//   var result = 0;
+//   var bigger = a > b ? a : b;
+//   var smaller = a > b ? b : a;
+//   for (var i = smaller; i <= bigger; i++) {
+//     result += i;
+//   }
+//   return result;
+// }
