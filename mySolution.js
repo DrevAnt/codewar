@@ -63,13 +63,43 @@
 //   return new Set(str.toLowerCase()).size === str.length;
 // }
 
-// Beginner Series #3 Sum of Numbers
-function GetSum(a, b) {
-  let result = 0;
-  let bigger = a > b ? a : b;
-  let smaller = a > b ? b : a;
-  for (let i = smaller; i <= bigger; i++) {
-    result += i;
+// // Beginner Series #3 Sum of Numbers
+// function GetSum(a, b) {
+//   let result = 0;
+//   let bigger = a > b ? a : b;
+//   let smaller = a > b ? b : a;
+//   for (let i = smaller; i <= bigger; i++) {
+//     result += i;
+//   }
+//   return result;
+// }
+
+// // Tower builder
+// // Надо смотреть на конструкцию башни и из нее брать алгоритм который засунуть в repeat
+// function towerBuilder(nFloors) {
+//   const tower = [];
+//   for (let i = 0; i < nFloors; i++) {
+//     tower.push(
+//       " ".repeat(nFloors - i - 1) +
+//         "*".repeat(i * 2 + 1) +
+//         " ".repeat(nFloors - i - 1)
+//     );
+//   }
+//   return tower;
+// }
+// console.log(towerBuilder(5));
+
+// count of positive sum of neg in array of numb
+function countPositivesSumNegatives(input) {
+  if (input == null || input.length == 0) return [];
+
+  var positive = 0;
+  var negative = 0;
+
+  for (var i = 0, l = input.length; i < l; ++i) {
+    if (input[i] > 0) ++positive;
+    else negative += input[i];
   }
-  return result;
+
+  return [positive, negative];
 }
