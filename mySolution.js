@@ -90,16 +90,43 @@
 // console.log(towerBuilder(5));
 
 // count of positive sum of neg in array of numb
-function countPositivesSumNegatives(input) {
-  if (input == null || input.length == 0) return [];
+// function countPositivesSumNegatives(input) {
+//   if (input == null || input.length == 0) return [];
 
-  var positive = 0;
-  var negative = 0;
+//   var positive = 0;
+//   var negative = 0;
 
-  for (var i = 0, l = input.length; i < l; ++i) {
-    if (input[i] > 0) ++positive;
-    else negative += input[i];
-  }
+//   for (var i = 0, l = input.length; i < l; ++i) {
+//     if (input[i] > 0) ++positive;
+//     else negative += input[i];
+//   }
 
-  return [positive, negative];
-}
+//   return [positive, negative];
+// }
+
+//array of numbers. You have to sort the odd numbers in ascending order while leaving the even numbers at their original positions.
+// let array = [5, 3, 2, 8, 1, 4];
+// function sortArray(array) {
+//   const OddArr = [];
+//   const evenArr = [];
+//   const result = [];
+
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] % 2 === 0) {
+//       evenArr.push(array[i]);
+//     } else {
+//       OddArr.push(array[i]);
+//     }
+//   }
+
+//   OddArr.sort((a, b) => a - b);
+
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] % 2 === 0) {
+//       result.push(evenArr.shift());
+//     } else {
+//       result.push(OddArr.shift());
+//     }
+//   }
+//   return result;
+// }
