@@ -144,3 +144,20 @@
 //   //   return Number(mutatedArr);
 //   return Number(arr);
 // }
+
+// // abbrevName
+// function abbrevName(name){
+
+//   return name.split(" ").map(el=>el[0]).join(".").toUpperCase()
+
+// }
+
+// Invert values
+// function invert(array) {
+//   return array.map(el=> el * (-1));
+// }
+
+// //Keep Hydrated!
+// function litres(time) {
+//   return Math.floor(time * 0.5);
+// }
