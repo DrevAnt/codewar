@@ -172,3 +172,37 @@
 //   //#Happy Coding! ^_^
 //   return s * 1000 + m * 60000 + h * 3600000;
 // }
+
+// // Next Perfect Score
+// fubction nextSquare(n) {
+//   let squaredNumber = Math.sqrt(n);
+
+//   if(Number.isInteger(squaredNumber) === true){
+//     return Math.pow(squaredNumber+1, 2)
+//   }else{
+//     return null
+//   }
+// }
+
+// // Two to one (string concat and sort)
+// function longest(s1, s2) {
+//   let result = [...new Set(s1 + s2)].sort().join("");
+//   return result;
+// }
+// Remove duplicate elements from the array
+// // Use to remove duplicate elements from the array
+
+// const numbers = [2,3,4,4,2,3,3,4,4,5,5,6,6,7,5,32,3,4,5]
+
+// console.log([...new Set(numbers)])
+
+// // [2, 3, 4, 5, 6, 7, 32]
+
+// // Fake Binary
+// // Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+// function fakeBin(x) {
+//   let toArr = x.split("");
+//   let result = toArr.map((el) => (el < 5 ? 0 : 1)).join("");
+//   return result;
+//   // return x.split("").map(el=> el<5 ? 0:1).join("")
+// }
